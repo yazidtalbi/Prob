@@ -79,8 +79,8 @@ const timeMorocco = moment()
 
   .cta {
     top: auto;
-    bottom: 22%;
-    right: 30%;
+    bottom: 25%;
+    right: 29%;
     left: auto;
   }
 
@@ -147,8 +147,31 @@ const timeMorocco = moment()
 <section
   class="h-screen bg-no-repeat bg-cover overflow-x-hidden overflow-y-hidden"
 >
-  <canvas id="gradient-canvas" data-transition-in class="-z-10 absolute"
-  ></canvas>
+  <a
+    href=""
+    title="Réserver un consultation - Arlibera"
+    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
+  >
+    <div
+      class="parent absolute cursor-pointer z-50 flex items-center justify-center cta md:visible invisible"
+    >
+      <img
+        src="../../consultation-arlibera-2.svg"
+        class="child h-36 z-10 rounded-full p-3 spin cursor-pointer"
+        alt="Arlibera Consultation"
+      />
+      <Icon
+        name="teenyicons:arrow-right-outline"
+        class="h-10 text-white absolute z-20 arrow"
+      />
+    </div></a
+  >
+
+  <canvas
+    id="gradient-canvas"
+    data-transition-in
+    class="z-10 absolute"
+    style="mix-blend-mode: darken;"></canvas>
 
   <div class="content-container -pt-10 flex md:hidden" id="scaleable-wrapper">
     <div class="content" id="very-specific-design">
@@ -211,28 +234,8 @@ const timeMorocco = moment()
       playsinline="playsinline"
       class="invisible md:visible wow animate__animated scale-in-center"
     >
-      <source src="../../Hero.webm" type="video/webm" class="" />
+      <source src="../../Hero.mp4" type="video/mp4" class="" />
     </video>
-
-    <a
-      href=""
-      title="Réserver un consultation - Arlibera"
-      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
-    >
-      <div
-        class="parent absolute cursor-pointer z-30 flex items-center justify-center cta md:visible invisible"
-      >
-        <img
-          src="../../consultation-arlibera-2.svg"
-          class="child h-36 z-10 rounded-full p-3 spin cursor-pointer"
-          alt="Arlibera Consultation"
-        />
-        <Icon
-          name="teenyicons:arrow-right-outline"
-          class="h-10 text-white absolute z-20 arrow"
-        />
-      </div></a
-    >
   </div>
   <div
     class="justify-between items-center md:px-20 pb-10 hidden md:flex absolute bottom-0 w-full left-0 right-0 wow animate__animated fade-in-bottom"
