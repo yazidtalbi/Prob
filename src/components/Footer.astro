@@ -1,0 +1,204 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+  .footer {
+    padding: 7.5rem 7.5rem 0rem;
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      padding: 0rem;
+      display: block;
+    }
+  }
+</style>
+
+<section
+  class="section bg-[url('../../gradient.png')] bg-no-repeat bg-cover footer"
+  id="contact"
+>
+  <div
+    class="p-4 md:p-16 m-4 md:m-0 bg-a-dark md:max-w-[75rem] md:mx-auto wow animate__animated fade-in-bottom"
+  >
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-x-4 justify-between"
+      style="width:-webkit-fill-available"
+    >
+      <div class="md:col-span-1">
+        <h2 class="text-a-light text-3xl md:text-6xl uppercase mb-5 md:mb-16">
+          Collaborons <br class="md:block hidden" />sur un projet
+        </h2>
+
+        <ul class="space-y-4 md:mb-16 hidden md:block">
+          <li class="flex space-x-6">
+            <Icon
+              name="ri:check-line"
+              class="h-7 w-7 bg-yellow-200 rounded-full p-1"
+            /><p class="text-yellow-200 text-xl">Réponse dans les 24 heures.</p>
+          </li>
+          <li class="flex space-x-6">
+            <Icon
+              name="ri:check-line"
+              class="h-7 w-7 bg-yellow-200 rounded-full p-1"
+            /><p class="text-white text-xl">
+              Flexibles selon vos besoins spécifiques.
+            </p>
+          </li>
+          <li class="flex space-x-6">
+            <Icon
+              name="ri:check-line"
+              class="h-7 w-7 bg-yellow-200 rounded-full p-1"
+            /><p class="text-white text-xl">Accès à des experts du digital.</p>
+          </li>
+        </ul>
+        <div class="md:flex md:space-x-20 hidden mt-20 md:mt-0">
+          <button
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <Icon name="mdi:linkedin" class="h-8 text-a-light" /><p
+              class="text-a-light text-xl font-bold"
+            >
+              LinkedIn
+            </p>
+          </button><div>
+            <button
+              class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity mt-3 md:mt-0"
+            >
+              <Icon name="fa:phone" class="h-8 p-1 text-a-light" /><p
+                class="text-a-light text-xl font-bold"
+              >
+                (+212)6-435-789
+              </p>
+            </button>
+            <button
+              class="flex space-x-3 items-center mt-2 opacity-60 hover:opacity-100 transition-opacity"
+            >
+              <Icon
+                name="ic:baseline-alternate-email"
+                class="h-8 text-a-light"
+              /><p class="text-a-light text-xl font-bold">
+                contact@arlibera.ma
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="md:flex md:items-center md:col-span-1">
+        <form
+          class="max-w-lg md:max-w-none mx-auto w-full mt-0 md:mt-10"
+          id="contact"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="f748300c-e4d7-4821-84e2-90a3e6d01f7d"
+          />
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="block py-2.5 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Nom Complet*</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group mt-6">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="block py-2.5 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email*</label
+            >
+          </div>
+
+          <div class="relative z-0 w-full mb-5 group mt-14">
+            <textarea
+              name="message"
+              rows="4"
+              id="message"
+              class="block py-2.5 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+              placeholder=" "
+              required></textarea>
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >A propos de votre projet*</label
+            >
+          </div>
+
+          <!-- <div class="h-captcha" data-captcha="true"></div> -->
+
+          <div class="mt-8 md:float-right">
+            <button
+              type="submit"
+              class="bg-a-blue text-white font-semibold text-xl hover:text-white py-3 px-6 rounded-full flex space-x-5 items-center"
+            >
+              <p>Commencer un projet</p>
+
+              <Icon name="system-uicons:arrow-right" class="h-8" />
+            </button>
+          </div>
+        </form>
+
+        <div class="md:space-x-20 block md:hidden mt-20 md:mt-0 mb-5">
+          <button
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <Icon name="mdi:linkedin" class="h-6 text-a-light" /><p
+              class="text-a-light text-lg font-bold"
+            >
+              LinkedIn
+            </p>
+          </button><div>
+            <button
+              class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity mt-3 md:mt-0"
+            >
+              <Icon name="fa:phone" class="h-6 p-1 text-a-light" /><p
+                class="text-a-light text-lg font-bold"
+              >
+                (+212)6-435-789
+              </p>
+            </button>
+            <button
+              class="flex space-x-3 items-center mt-2 opacity-60 hover:opacity-100 transition-opacity"
+            >
+              <Icon
+                name="ic:baseline-alternate-email"
+                class="h-6 text-a-light"
+              /><p class="text-a-light text-lg font-bold">
+                contact@arlibera.ma
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="block md:flex justify-between py-2 md:px-0 px-4 md:py-8 md:max-w-[75rem] md:mx-auto md:!pb-8"
+  >
+    <p class="font-bold">© 2024 Arlibera™</p>
+    <p>Tous Droits Réservés</p>
+  </div>
+</section>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>

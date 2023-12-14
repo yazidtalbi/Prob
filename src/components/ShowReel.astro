@@ -1,0 +1,26 @@
+---
+import Reels from "./Reels";
+---
+
+<section class="min-h-screen bg-a-dark" id="presentation">
+  <div class="pt-32"></div>
+  <div class="md:m-14 m-4">
+    <div
+      class="bg-[url('../..//gradient2.webp')] bg-no-repeat bg-cover overflow-hidden max-w-screen-xl mx-auto"
+    >
+      <h1
+        class="text-black text-2xl md:text-5xl uppercase p-10 md:p-20 font-medium md:font-normal wow animate__animated fade-in-bottom"
+      >
+        Une agence <br class="invisible md:visible" /> multidisciplinaire<br
+          class="invisible md:visible"
+        />
+         pour le nouveau web
+      </h1>
+
+      <div class="mt-10">
+        <Reels client:idle />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="pb-32"></div> -->
+</section>

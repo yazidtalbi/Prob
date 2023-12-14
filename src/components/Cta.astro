@@ -1,0 +1,54 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+  /* Replace .your-element-class with the actual class of your element */
+  .bg-cta {
+    background-image: url("../../mask.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media (max-width: 767px) {
+    .bg-cta {
+      background-image: url(".");
+    }
+  }
+</style>
+
+<section class="section-container">
+  <div
+    class="bg-a-dark grid grid-cols-1 md:grid-cols-12 gap-4 justify-between p-4 md:p-20 m-4 md:m-0 bg-cta"
+    style=""
+  >
+    <div class="col-span-7 mt-6 md:mt-24">
+      <h2
+        class="text-a-light text-3xl md:text-5xl leading-relaxed uppercase mb-5 md:mb-10 font-medium"
+      >
+        Vous avez déjà <br class="md:block hidden" />un projet?
+      </h2>
+
+      <p
+        class="text-white text-xl md:text-2xl md:leading-relaxed mt-12 font-normal md:mr-32"
+      >
+        Nous serons chargés d’analyser votre site web, votre produit ou votre
+        application au cours d'une session téléphonique de 30 minutes,
+        <span class="font-bold">gratuitement</span> .
+      </p>
+    </div>
+    <div class="mt-auto mb-10 col-span-4">
+      <a
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
+      >
+        <button
+          class="bg-a-blue text-white font-semibold text-xl hover:text-white py-2 px-4 md:py-3 md:px-6 rounded-full flex items-center whitespace-no-wrap mt-6"
+        >
+          <p class="inline text-md md:text-xl">Réserver une Consultation</p>
+          <Icon name="system-uicons:arrow-top-right" class="h-8 md:h-8" />
+        </button>
+      </a>
+    </div>
+  </div>
+</section>

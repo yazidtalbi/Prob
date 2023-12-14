@@ -1,0 +1,134 @@
+---
+import { Icon } from "astro-icon";
+
+const Design = [
+  {
+    service: "Branding & Identité Visuelle",
+    text: "Création d'identités visuelles robustes à travers l'élaboration de solutions de logo, de choix de couleurs et typographie, en assurant une cohérence de marque.",
+  },
+  {
+    service: "Web Design",
+    text: "Sites web qui captivent les utilisateurs et favorisent les conversions.",
+  },
+  {
+    service: "Mobile App Design",
+    text: "Interfaces attrayantes et faciles à utiliser pour iOS et Android.",
+  },
+  {
+    service: "UX/UI Design",
+    text: "Conception et optimisation des expériences utilisateurs.",
+  },
+  {
+    service: "Landing Page Design",
+    text: "Pages web qui transforment les visiteurs en prospects ou clients.",
+  },
+];
+const Code = [
+  {
+    service: "Développement des Sites Web",
+    text: "Création et développement de sites web intuitifs et optimisés sous les dernières technologies, garantissant ainsi des performances et une évolutivité accrues.",
+  },
+  {
+    service: "Développement d'Applications Web",
+    text: "Applications web fonctionnelles, accessibles depuis n'importe quel appareil, conçues pour automatiser divers services tels que la gestion de stock, la gestion de la clientèle, et répondre à d'autres besoins spécifiques.",
+  },
+  {
+    service: "Intégration CMS",
+    text: "Expérience de gestion de contenu fluide pour gérer efficacement le contenu des sites web.",
+  },
+  {
+    service: "Intégration SEO",
+    text: "Optimisation des sites web pour atteindre le sommet des classements des moteurs de recherche.",
+  },
+];
+---
+
+<section
+  class="section bg-[url('../../gradient-services.webp')] bg-no-repeat bg-cover"
+  id="services"
+>
+  <div class="section-container">
+    <div
+      class="grid grid-cols-1 md:grid-cols-12 wow animate__animated fade-in-bottom"
+    >
+      <div class="md:col-span-3">
+        <p class="mt-2 text-xl md:text-2xl md:mb-0 mb-10">
+          Une panoplie de services numériques
+        </p>
+      </div>
+      <div class="md:col-span-1"></div>
+      <div class="md:col-span-8">
+        <h1
+          class="text-2xl font-medium md:text-4xl leading-normal md:leading-relaxed"
+        >
+          Notre expertise approfondie en design et développement web garantie
+          des expériences numériques exceptionnelles
+        </h1>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:mt-40 mt-10">
+      <div class="bg-white p-6 md:p-12">
+        <img
+          class="object-cover h-24 md:h-32 mt-10 md:mt-0"
+          src="../../design.png"
+          alt="design"
+        />
+        <h2 class="uppercase text-3xl md:text-5xl md:mt-24 mt-10">Design</h2>
+
+        <p
+          class="text-md md:text-xl mt-8 mb-8 md:mb-16 text-gray-500 leading-normal md:leading-relaxed"
+        >
+          En accordant une priorité aux besoins des utilisateurs, nous racontons
+          une histoire unique en maniant des éléments visuels sophistiqués.
+        </p>
+        <div class="divide-y">
+          {
+            Design.map((item, index) => (
+              <div class="collapse collapse-arrow  rounded-none">
+                <input type="radio" name="design" />
+                <div class="collapse-title text-md md:text-2xl pr-10 md:pr-10 font-bold uppercase px-0 py-4 md:py-8">
+                  {item.service}
+                </div>
+                <div class="collapse-content text-sm md:text-xl leading-relaxed text-gray-600">
+                  {item.text}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="bg-white p-6 md:p-12">
+        <img
+          class="object-cover h-24 md:h-32 mt-10 md:mt-0"
+          src="../../code.png"
+          alt="code"
+        />
+        <h2 class="uppercase text-3xl md:text-5xl md:mt-24 mt-10">Code</h2>
+
+        <p
+          class="text-md md:text-xl mt-8 mb-8 md:mb-16 text-gray-500 leading-normal md:leading-relaxed"
+        >
+          Notre approche de développement repose sur la création d'expériences
+          numériques qui allient esthétisme et fonctionnalité.
+        </p>
+        <div class="divide-y">
+          {
+            Code.map((item, index) => (
+              <div class="collapse collapse-arrow  rounded-none">
+                <input type="radio" name="code" />
+                <div class="collapse-title text-md md:text-2xl pr-10 md:pr-4 font-bold uppercase px-0 py-4 md:py-8">
+                  {item.service}
+                </div>
+                <div class="collapse-content text-sm md:text-xl leading-relaxed text-gray-600">
+                  {item.text}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

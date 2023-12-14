@@ -1,0 +1,88 @@
+---
+// import Swiper JS
+// import Swiper from "swiper";
+// // import Swiper styles
+// import "swiper/css";
+
+import Swiper from "./Swiper.astro";
+
+// const swiper = new Swiper(".swiper", {
+//   slidesPerView: "auto",
+//   speed: 7000,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: false,
+//   },
+//   loop: true,
+//   freeMode: {
+//     enabled: true,
+//     sticky: false,
+//   },
+// });
+---
+
+<section class="bg-a-dark overflow-hidden">
+  <div>
+    <div class="">
+      <div class="section relative">
+        <div class="section-container">
+          <img
+            class="absolute -right-16 top-10 md:-right-60 md:top-20 max-w-[300px] md:max-w-[700px] !pt-12 md:pt-0"
+            src="../../Logo.webp"
+            alt="Alternative Logo Arlibera"
+          />
+        </div>
+        <div
+          class="block md:grid grid-cols-1 md:grid-cols-12 md:space-x-10 section-container !pb-24 md:!pb-0"
+        >
+          <div class="md:col-span-7 mr-10">
+            <h1
+              class="text-3xl md:text-7xl text-a-light uppercase
+        leading-tight md:mt-0 mt-[320px] wow animate__animated fade-in-bottom"
+              data-wow-offset="100"
+            >
+              Propulsés par l'innovation
+            </h1>
+            <p
+              class="text-white text-xl md:text-3xl md:leading-relaxed mt-10 md:mt-24 font-light wow animate__animated fade-in-bottom"
+              data-wow-offset="70"
+            >
+              Nous exprimons une profonde appréciation pour l'innovation qui
+              aspire à dépasser les frontières de la pensée et à ouvrir de
+              nouvelles perspectives.
+            </p><br />
+
+            <p
+              class="text-white text-xl md:text-3xl md:leading-relaxed mt-6 md:mt-12 font-light wow animate__animated fade-in-bottom"
+              data-wow-offset="70"
+            >
+              Chaque vision, chaque détail, chaque pixel revêt une importance
+              cruciale dans notre approche axée sur la perfection.
+            </p>
+          </div>
+          <div class="md:col-span-1"></div>
+          <div class="md:col-span-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <Swiper />
+
+    <div
+      class="block md:grid grid-cols-1 md:grid-cols-12 md:space-x-10 section-container !py-32"
+    >
+      <div class="md:col-span-7">
+        <p
+          class="text-white text-xl md:text-3xl md:leading-relaxed font-light wow animate__animated fade-in-bottom"
+          data-wow-offset="70"
+        >
+          Bien que basés au Maroc, nous coopérons avec des talents du monde
+          entier pour garantir des résultats haut de gamme et surpasser les
+          attentes de nos clients.
+        </p>
+      </div>
+      <div class="md:col-span-1"></div>
+      <div class="md:col-span-4"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+---
+import Partners from "./Partners";
+
+import { Icon } from "astro-icon";
+---
+
+<section
+  class="section bg-[url('../..//BG-Agency.png')] bg-[left_top_20rem] bg-no-repeat"
+  id="agence"
+>
+  <div class="section-container">
+    <div class="grid grid-cols-1 md:grid-cols-12">
+      <div class="md:col-span-3">
+        <Icon name="ph:diamond-thin" class="h-6 mb-10 mt-2" />
+        <p class="text-xl md:text-2xl mr-10 md:mb-0 mb-10">
+          Une vision qui transcende la normalité
+        </p>
+      </div>
+      <div class="md:col-span-1"></div>
+      <div class="md:col-span-8">
+        <h1
+          class="md:text-7xl text-4xl
+        uppercase font-medium
+        leading-tight md:leading-tight wow animate__animated fade-in-bottom"
+          data-wow-offset="100"
+        >
+          Nous sommes des penseurs créatifs et stratégiques
+        </h1>
+
+        <hr class="mt-6 md:mt-16" />
+
+        <p
+          class="text-xl md:text-3xl md:leading-relaxed mt-6 md:mt-16 wow animate__animated fade-in-bottom"
+          data-wow-offset="70"
+        >
+          Guidés par la passion de la creativité, nous accompagnons les marques
+          dans l'exploration de nouveaux horizons pour créer des expériences de
+          nouvelle génération. Notre fusion d'expertise en développement et en
+          design nous permet de sculpter des produits uniques et mémorables.
+        </p>
+
+        <p
+          class="text-xl md:text-3xl md:leading-relaxed mt-12 wow animate__animated fade-in-bottom"
+          data-wow-offset="70"
+        >
+          Nous sommes en permanence à l'avant-garde des tendances, intégrant les
+          dernières avancées pour concevoir des solutions entièrement sur
+          mesure.
+        </p>
+
+        <p
+          class="text-xl md:text-3xl md:leading-relaxed mt-12 wow animate__animated fade-in-bottom"
+          data-wow-offset="70"
+        >
+          Chaque projet que nous entreprenons est une opportunité de repousser
+          les limites, de défier la norme et de donner vie à des visions
+          uniques.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-screen overflow-hidden">
+  <Partners client:idle />
+</div>

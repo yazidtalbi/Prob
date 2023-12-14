@@ -1,0 +1,107 @@
+---
+import { Icon } from "astro-icon";
+
+const faq = [
+  {
+    question: "Qu'est-ce qui distingue Arlibera des autres agences créatives ?",
+    answer:
+      "Chez Arlibera, nous nous démarquons par une approche 100% sur mesure. Notre équipe expérimentée travaille en étroite collaboration avec chaque client pour garantir des résultats personnalisés et exceptionnels.<br><br> Nous croyons que le succès de nos clients est étroitement lié au nôtre. Nous créons des partenariats durables basés sur la confiance et la croissance mutuelle, allant au-delà des services de classe mondiale. <br><br> Lorsque vous choisissez notre agence, vous collaborez directement avec des talents de calibre haut de gamme. Nos cofondateurs supervisent chaque projet, tandis qu'un directeur du design guide le processus, assurant des examens de conception approfondis et une implication dans les détails du projet. <br><br>La communication et la transparence guident toutes nos interactions, garantissant une expérience client premium du début à la fin. <br><br>Contrairement aux agences de design traditionnelles, nous intégrons l'expertise en branding et en produit en un seul endroit, en mettant en avant des équipes interdisciplinaires pour chaque projet. Cela garantit que votre application ou site web représente efficacement votre marque tout en offrant une expérience utilisateur inoubliable.",
+  },
+  {
+    question:
+      "Quelle est la tarification associée pour la réalisation d'un projet?",
+    answer:
+      "Nous comprenons l'importance de la flexibilité du budget et du soutien à nos partenaires. Nous proposons un tarif mixte pour nos services et travaillons avec nos clients pour déterminer le niveau de support que nous pouvons fournir en fonction de leurs contraintes budgétaires.<br><br>Suite à une série d’entretiens découverte et de briefings projet, notre équipe vous recommandera le modèle le plus adapté à vos besoins. Nous créerons ensuite une proposition personnalisée, comprenant un calendrier et un coût estimé.<br><br>Notre objectif est de fournir les meilleures solutions possibles à nos partenaires, adaptées à leurs besoins spécifiques. Qu’il s’agisse d’une gamme complète de services ou d’une approche personnalisée adaptée à leurs contraintes financières, nous nous efforçons de répondre à leurs besoins uniques sans pour autant sacrifier la qualité.",
+  },
+  {
+    question: "Quels types de projets prenez-vous en charge ?",
+    answer:
+      "Arlibera travaille avec une large diversité de clients, allant des petites et moyennes entreprises aux grandes entreprises. Nous accordons une importance égale à chaque projet, reconnaissant la singularité de chaque client et de ses besoins spécifiques. <br><br>Notre engagement est de fournir des services sur mesure, adaptés à la taille et à la nature de chaque entreprise, garantissant ainsi une approche personnalisée et efficace pour atteindre les objectifs de nos clients, quelle que soit leur envergure.",
+  },
+  {
+    question: "Avec quel type d’entreprises travaillez-vous ?",
+    answer:
+      "Nous travaillons avec un large éventail d'entreprises dans divers secteurs. Nous avons de l’expérience pour les secteurs de médecine, les secteurs de l’immobilier, les secteurs de consulting ainsi que les secteurs de luxe. <br><br> Notre expertise nous permet de répondre aux besoins des petites et moyennes entreprises ainsi que des grandes entreprises.",
+  },
+  {
+    question:
+      "Comment fonctionne le processus de collaboration avec les clients chez Arlibera ?",
+    answer:
+      "Le processus de collaboration chez Arlibera s'accompagne d'une attention particulière à la facilité de suivi et de suivi du projet. Nous fournissons à chaque client un portail personnalisé qui leur offre une visibilité complète sur l'avancement de leur projet.<br><br>Ce portail constitue un outil essentiel pour suivre les étapes clés, examiner les versions de travail et fournir des commentaires instantanés. En intégrant cette plateforme, nous visons à garantir la meilleure expérience possible pour nos clients, en mettant l'accent sur la transparence et la facilité d'accès aux informations cruciales du projet.",
+  },
+];
+---
+
+<section class="bg-white" id="faq">
+  <section class="section">
+    <div class="section-container">
+      <div class="grid grid-cols-1 gap-x-4 md:grid-cols-12 md:gap-y-4 gap-y-4">
+        <div class="col-span-1 md:col-span-2">
+          <h1 class="text-3xl md:text-7xl text-a-dark uppercase leading-loose">
+            FAQ
+          </h1>
+        </div>
+        <div class="col-span-1 md:col-span-1"></div>
+        <div class="col-span-1 md:col-span-8 gap-y-10">
+          <div class="divide-y divide-slate-700">
+            {
+              faq.map((item, index) => (
+                <div class="collapse collapse-plus rounded-none ">
+                  <input type="radio" name="my-accordion-3" />
+                  <div
+                    class="collapse-title text-xl font-medium my-4 px-0 md:pr-10 pr-14 wow animate__animated fade-in-bottom "
+                    data-wow-offset="70"
+                  >
+                    <p class="text-md md:text-2xl  font-semibold ">
+                      {item.question}
+                    </p>
+                  </div>
+                  <div class="collapse-content ">
+                    <p
+                      class="text-md md:text-xl text-normal opacity-70 my-2 md:px-2 px-0"
+                      set:html={item.answer}
+                    />
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+          <div
+            class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0 lg:items-center lg:justify-between block bg-a-pink p-6 mt-14"
+          >
+            <div
+              class="block lg:flex lg:items-center lg:gap-8 space-y-6 lg:space-y-0"
+            >
+              <div class="relative">
+                <img
+                  class="w-16 h-16 rounded-full"
+                  src="https://web-assets.zendesk.com/images/p-service/jointhebest-square-2.jpg"
+                  alt=""
+                />
+                <span
+                  class="bottom-0 left-0 absolute w-5 h-5 bg-green-400 border-4 border-a-pink rounded-full"
+                ></span>
+              </div>
+
+              <div class="">
+                <p class="text-lg font-semibold w-full">
+                  Voici Meryem, Consultante chez Arlibera. <br
+                    class="hidden md:block"
+                  />Elle répondra à toutes vos questions.
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="bg-a-blue text-white font-semibold text-md md:text-lg hover:text-white md:py-2 py-4 px-6 rounded-full flex space-x-5 items-center"
+            >
+              <p>Envoyer un message</p>
+
+              <img src="/whatsapp.webp" alt="Whatsapp Icon" class="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

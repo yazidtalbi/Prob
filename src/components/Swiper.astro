@@ -1,0 +1,61 @@
+<style>
+  .swiper-slide {
+    width: 500px;
+    padding: 0 35px;
+    img {
+      width: 100%;
+    }
+  }
+  .swiper-wrapper {
+    align-items: center;
+  }
+</style>
+<section class="overflow-visible">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/imgs/image-18.webp" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/imgs/work.webp" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/imgs/arab.webp" class="h-300" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/imgs/business.webp" class="h-300" alt="" />
+      </div>
+
+      <div class="swiper-slide">
+        <img
+          src="https://assets-global.website-files.com/63c9928f5600e730393edc56/63d59b42050b761546a7fdcf_12-p-800.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+  new Swiper(".swiper", {
+    slidesPerView: "auto",
+    speed: 5000,
+    grabCursor: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    freeMode: {
+      enabled: true,
+      sticky: false,
+    },
+  });
+</script>

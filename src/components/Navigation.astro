@@ -1,0 +1,228 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+  .fixed-header {
+    transition:
+      background-color 0.5s,
+      backdrop-filter 0.5s;
+  }
+</style>
+
+<div
+  class="fixed w-full z-20 top-0 start-0 fixed-header animate__animated animate__fadeInDown"
+  style="    animation-delay: 0.3s;animation-duration:1s"
+>
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:py-6 md:px-10 px-4 py-4"
+  >
+    <a href="/" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <img
+        src="../../logo-arlibera-2.svg"
+        class="text-black h-6"
+        alt="Arlibera Logo"
+      />
+      <span
+        class="self-center text-xl font-medium whitespace-nowrap tracking-loose"
+        >Arlibera
+      </span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a aria-label="contact" href="#contact">
+        <button
+          type="button"
+          class="text-lg text-white border border-a-dark bg-a-dark focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium px-4 py-2 text-center rounded-full"
+          >Contact</button
+        ></a
+      >
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 bg-white md:bg-transparent"
+    >
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+      >
+        <li>
+          <a
+            aria-label="agence"
+            href="#agence"
+            class="text-lg block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0"
+            >Agence</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="projets"
+            href="#projets"
+            class="text-lg block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0"
+            >Projets</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="services"
+            href="#services"
+            class="text-lg py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="clients"
+            href="#clients"
+            class="text-lg py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0"
+            >Clients</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="faq"
+            href="#faq"
+            class="text-lg py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-500 md:p-0"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div
+  id="navbar-sticky"
+  class="fixed h-full w-full bg-white z-10 overflow-hidden bg-[url('../../gradient-services.webp')] bg-no-repeat bg-cover hidden"
+>
+  <ul
+    class="font-normal uppercase text-4xl space-y-10 p-10 pt-32"
+    id="navbar-ul"
+  >
+    <a aria-label="agence" href="#agence" class=""
+      ><li class="flex my-auto items-center">
+        <Icon name="ph:diamond-thin" class="h-6 mr-4" /><p class="my-3">
+          Agence
+        </p>
+      </li></a
+    >
+
+    <a aria-label="projets" href="#projets" class=""
+      ><li class="flex my-auto items-center">
+        <Icon name="ph:diamond-thin" class="h-6 mr-4" /><p class="my-3">
+          Projets
+        </p>
+      </li></a
+    >
+
+    <a aria-label="services" href="#services" class=""
+      ><li class="flex my-auto items-center">
+        <Icon name="ph:diamond-thin" class="h-6 w-6 mr-4" /><p class="my-3">
+          Services
+        </p>
+      </li></a
+    >
+    <a aria-label="clients" href="#clients" class=""
+      ><li class="flex my-auto items-center">
+        <Icon name="ph:diamond-thin" class="h-6 mr-4" /><p class="my-3">
+          Clients
+        </p>
+      </li></a
+    >
+    <a aria-label="faq" href="#faq" class=""
+      ><li class="flex my-auto items-center">
+        <Icon name="ph:diamond-thin" class="h-6 mr-4" /><p class="my-3">FAQ</p>
+      </li></a
+    >
+  </ul>
+
+  <div
+    class="md:space-x-20 block md:hidden mt-20 md:mt-0 mb-5 p-10 absolute bottom-0"
+  >
+    <button
+      class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+    >
+      <Icon name="mdi:linkedin" class="h-6 text-a-dark" /><p
+        class="text-a-dark text-lg font-bold"
+      >
+        LinkedIn
+      </p>
+    </button><div>
+      <button
+        class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity mt-3 md:mt-0"
+      >
+        <Icon name="fa:phone" class="h-6 p-1 text-a-dark" /><p
+          class="text-a-dark text-lg font-bold"
+        >
+          (+212)6-435-789
+        </p>
+      </button>
+      <button
+        class="flex space-x-3 items-center mt-2 opacity-60 hover:opacity-100 transition-opacity"
+      >
+        <Icon name="ic:baseline-alternate-email" class="h-6 text-a-dark" /><p
+          class="text-a-dark text-lg font-bold"
+        >
+          contact@arlibera.ma
+        </p>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"
+></script>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    var navbarSticky = document.getElementById("navbar-sticky");
+    var navItems = document.querySelectorAll("#navbar-ul a");
+
+    navItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        // Toggle the "hidden" class on the navbar-sticky element
+        navbarSticky.classList.toggle("hidden");
+        // Add or remove other classes as needed
+      });
+    });
+  });
+</script>
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector(".fixed-header");
+
+    // Add a scroll event listener
+    window.addEventListener("scroll", function () {
+      // Check if the user has started scrolling
+      if (window.scrollY > 120) {
+        // If scrolling has started, remove the initial styles
+        header.classList.add("bg-a-pink/60", "backdrop-blur-lg");
+      } else {
+        // If the user is at the top, reapply the initial styles
+        header.classList.remove("bg-a-pink/60", "backdrop-blur-lg");
+        header.classList.add("bg-transparent");
+      }
+    });
+  });
+</script>
