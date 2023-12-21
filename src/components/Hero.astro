@@ -80,19 +80,21 @@ const timeMorocco = moment()
   .cta {
     top: auto;
     bottom: 25%;
-    right: 29%;
+    right: 35%;
     left: auto;
+    z-index: 1000;
   }
 
   @media screen and (max-width: 800px) {
     .cta {
       position: absolute;
-      left: 65%;
-      top: 55%;
+      left: 45%;
+      top: 42%;
       transform: translate(-50%, -50%);
       transform-origin: center center;
       height: 200px;
       width: 200px;
+      transform: scale(0.8);
     }
   }
 
@@ -171,9 +173,13 @@ const timeMorocco = moment()
     id="gradient-canvas"
     data-transition-in
     class="z-10 absolute"
-    style="mix-blend-mode: darken;"></canvas>
+    style="mix-blend-mode: multiply;"></canvas>
 
-  <div class="content-container -pt-10 flex md:hidden" id="scaleable-wrapper">
+  <div
+    class="content-container -pt-10 flex md:hidden"
+    id="scaleable-wrapper"
+    style="transform: scale(.8);"
+  >
     <div class="content" id="very-specific-design">
       <h1 class="uppercase text-6xl ml-20 tracking-tight">Design &</h1>
       <h1 class="uppercase text-6xl -ml-28 tracking-tight">code</h1>
@@ -234,7 +240,7 @@ const timeMorocco = moment()
       playsinline="playsinline"
       class="invisible md:visible wow animate__animated scale-in-center"
     >
-      <source src="../../Hero.mp4" type="video/mp4" class="" />
+      <source src="../../WhiteBackground.mp4" type="video/mp4" class="" />
     </video>
   </div>
   <div

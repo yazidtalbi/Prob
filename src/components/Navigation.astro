@@ -11,8 +11,8 @@ import { Icon } from "astro-icon";
 </style>
 
 <div
-  class="fixed w-full z-20 top-0 start-0 fixed-header animate__animated animate__fadeInDown"
-  style="    animation-delay: 0.3s;animation-duration:1s"
+  class="fixed w-full z-100 top-0 start-0 fixed-header animate__animated animate__fadeInDown"
+  style="    animation-delay: 0.3s;animation-duration:1s; z-index:2000"
 >
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:py-6 md:px-10 px-4 py-4"
@@ -218,6 +218,7 @@ import { Icon } from "astro-icon";
       if (window.scrollY > 120) {
         // If scrolling has started, remove the initial styles
         header.classList.add("bg-a-pink/60", "backdrop-blur-lg");
+        header.classList.remove("bg-transparent");
       } else {
         // If the user is at the top, reapply the initial styles
         header.classList.remove("bg-a-pink/60", "backdrop-blur-lg");
