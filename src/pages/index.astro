@@ -12,6 +12,8 @@ import Testimonials from "../components/Testimonials.astro";
 import Faq from "../components/Faq.astro";
 
 import { SEO } from "astro-seo";
+
+import { Analytics } from "@vercel/analytics/react";
 ---
 
 <html lang="en">
@@ -92,9 +94,6 @@ import { SEO } from "astro-seo";
       new WOW().init();
     </script>
 
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/@vercel/analytics@1.1.1/dist/index.min.js"
-    ></script>
+    <Analytics />
   </body>
 </html>
