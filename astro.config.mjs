@@ -8,5 +8,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), astroImageTools, react(), compress(), sitemap()]
+  site: "https://arlibera.ma",
+  integrations: [tailwind(), astroImageTools, react(), compress(), sitemap()],
 });
