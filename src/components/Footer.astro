@@ -17,7 +17,7 @@ import { Icon } from "astro-icon";
 </style>
 
 <section
-  class="section bg-[url('../../gradient.webp')] bg-no-repeat bg-cover footer"
+  class="section bg-[url('../../gradient.webp')] bg-no-repeat bg-cover footer overflow-hidden md:overflow-visible"
   id="contact"
 >
   <div
@@ -150,13 +150,12 @@ import { Icon } from "astro-icon";
 
           <!-- <div class="h-captcha" data-captcha="true"></div> -->
 
-          <div class="mt-8 md:float-right">
+          <div class="mt-8 md:float-right flex justify-center">
             <button
               type="submit"
               class="bg-a-blue text-white font-semibold text-xl hover:text-white py-3 px-6 rounded-full flex space-x-5 items-center"
             >
               <p>Commencer un projet</p>
-
               <Icon name="system-uicons:arrow-right" class="h-8" />
             </button>
           </div>
@@ -165,7 +164,7 @@ import { Icon } from "astro-icon";
         <div class="md:space-x-20 block md:hidden mt-20 md:mt-0 mb-5">
           <a
             href="https://www.linkedin.com/company/arlibera/"
-            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity justify-center"
           >
             <Icon name="mdi:linkedin" class="h-6 text-a-light" /><p
               class="text-a-light text-lg font-bold"
@@ -175,7 +174,7 @@ import { Icon } from "astro-icon";
           </a><div>
             <a
               href="tel:+212708774105"
-              class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity mt-3 md:mt-0"
+              class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity mt-3 md:mt-0 justify-center"
             >
               <Icon name="fa:phone" class="h-6 p-1 text-a-light" /><p
                 class="text-a-light text-lg font-bold"
@@ -185,7 +184,7 @@ import { Icon } from "astro-icon";
             </a>
             <a
               href="mailto:contact@arlibera.ma"
-              class="flex space-x-3 items-center mt-2 opacity-60 hover:opacity-100 transition-opacity"
+              class="flex space-x-3 items-center mt-2 opacity-60 hover:opacity-100 transition-opacity justify-center"
             >
               <Icon
                 name="ic:baseline-alternate-email"
@@ -200,7 +199,8 @@ import { Icon } from "astro-icon";
     </div>
   </div>
   <div
-    class="block md:flex justify-between py-2 md:px-0 px-4 md:py-8 md:max-w-[75rem] md:mx-auto md:!pb-20"
+    class="block md:flex justify-between py-2 md:px-0 px-4 md:py-8 md:max-w-[75rem] md:mx-auto md:!pb-20 pb-8"
+    style="text-align-last: center;"
   >
     <p class="font-bold">© 2024 Arlibera™</p>
     <p>Tous Droits Réservés</p>
