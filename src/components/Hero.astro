@@ -8,7 +8,7 @@ const minutes = now.getMinutes();
 
 import moment from "moment-timezone";
 const timeMorocco = moment()
-  .tz("Morocco/Casablanca")
+  .tz("Africa/Casablanca")
   .utcOffset("+01:00")
   .format("h:mm A");
 ---
@@ -79,8 +79,8 @@ const timeMorocco = moment()
 
   .cta {
     top: auto;
-    bottom: 25%;
-    left: 60%;
+    bottom: 22%;
+    left: 59%;
     z-index: 3000;
   }
 
@@ -218,27 +218,27 @@ const timeMorocco = moment()
       class="h-10 text-black arrow my-auto"
     />
   </div>
-
+  <a
+    href=""
+    title="Réserver un consultation - Arlibera"
+    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
+  >
+    <div
+      class="parent absolute cursor-pointer z-50 flex items-center justify-center cta md:visible invisible"
+      style="z-index:5000 !important"
+    >
+      <img
+        src="../../consultation-arlibera-2.svg"
+        class="child h-36 z-10 rounded-full p-3 spin cursor-pointer"
+        alt="Arlibera Consultation"
+      />
+      <Icon
+        name="teenyicons:arrow-right-outline"
+        class="h-10 text-white absolute z-20 arrow"
+      />
+    </div></a
+  >
   <div class="relative md:max-w-screen-2xl mx-auto video">
-    <a
-      href=""
-      title="Réserver un consultation - Arlibera"
-      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
-    >
-      <div
-        class="parent absolute cursor-pointer z-50 flex items-center justify-center cta md:visible invisible"
-      >
-        <img
-          src="../../consultation-arlibera-2.svg"
-          class="child h-36 z-10 rounded-full p-3 spin cursor-pointer"
-          alt="Arlibera Consultation"
-        />
-        <Icon
-          name="teenyicons:arrow-right-outline"
-          class="h-10 text-white absolute z-20 arrow"
-        />
-      </div></a
-    >
     <video
       width="100%"
       height="100%"
