@@ -1,0 +1,437 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<section
+  class="section bg-[url('../../gradient-services.webp')] bg-no-repeat bg-cover !py-10 !lg:py-20"
+  id="services"
+>
+  <div class="section-container lg:py-12 md:pb-0">
+    <div class="block sm:flex justify-between">
+      <div class="flex items-center space-x-4 rtl:space-x-reverse">
+        <div class="border-dark border-2 rounded-full p-2 my-auto">
+          <img
+            src="../../logo-arlibera-2.svg"
+            class="text-white p-1 h-12 w-12"
+            alt="Arlibera Logo"
+          />
+        </div>
+        <span
+          class="self-center text-2xl font-medium whitespace-nowrap tracking-loose text-dark my-auto"
+          >Arlibera
+
+          <p class="text-xl md:text-xl md:mb-0 text-gray-400">
+            Agence Créative Web
+          </p>
+        </span>
+      </div>
+
+      <div class="hidden md:block mt-20 md:mt-0 md:space-y-2 mr-5">
+        <a
+          href="https://www.linkedin.com/company/arlibera/"
+          target="”_blank”"
+          class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <Icon name="mdi:linkedin" class="h-6 text-a-dark" /><p
+            class="text-a-dark text-lg font-bold"
+          >
+            LinkedIn
+          </p>
+        </a>
+        <a
+          href="tel:+212708774105"
+          target="”_blank”"
+          class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity md:mt-0"
+        >
+          <Icon name="fa:phone" class="h-6 p-1 text-a-dark" /><p
+            class="text-a-dark text-lg font-bold"
+          >
+            (+212)7-087-74105
+          </p>
+        </a>
+        <a
+          href="mailto:contact@arlibera.ma"
+          target="”_blank”"
+          class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <Icon name="ic:baseline-alternate-email" class="h-6 text-a-dark" /><p
+            class="text-a-dark text-lg font-bold"
+          >
+            contact@arlibera.ma
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:mt-12 mt-10">
+      <div class="col-span-1 lg:col-span-7">
+        <div class="bg-a-dark p-6 md:p-12 overflow-hidden">
+          <h2
+            class="uppercase text-3xl md:text-4xl mt-2 text-a-light font-semibold !leading-[120%]"
+          >
+            Établissez la présence digitale <span style="color:#FFBFF9"
+              >ultime</span
+            > avec des sites Web de <span style="color:#FFBFF9"
+              >💎 haute gamme</span
+            >
+          </h2>
+
+          <div class="flex my-16 ml-16 md:ml-36">
+            <img
+              class="h-32 md:h-40 pr-4"
+              src="../../reels/webp/folklore.webp"
+              alt="Festival International du Folklore - Arlibera"
+            />
+            <img
+              class="h-32 md:h-40 pr-4"
+              src="../../reels/webp/cnss.webp"
+              alt="CNSS - Caisse Nationale de Sécurité Sociale - Arlibera"
+            />
+            <img
+              class="h-32 md:h-40 pr-4"
+              src="../../reels/webp/m3ak.webp"
+              alt="Platforme m3ak - Arlibera"
+            />
+          </div>
+
+          <p
+            class="text-2xl md:text-2xl my-16 leading-normal md:leading-relaxed font-normal text-white"
+          >
+            🤝 Nous aidons les entreprises à exploiter <span class="font-bold"
+              >pleinement</span
+            > leur potentiel numérique grâce à l’établissement des identités de
+            marque de <span class="font-bold">haute qualité</span> et la
+            création de sites Web <span class="font-bold">sur mesure</span>.
+          </p>
+
+          <h2
+            class="text-a-pink font-bold text-2xl mb-16"
+            style="color:#FFBFF9"
+          >
+            En optant pour nos services vous garantissez :
+          </h2>
+
+          <ul class="space-y-4 mb-10 md:mb-16 block">
+            <li class="flex space-x-6">
+              <Icon
+                name="ri:check-line"
+                class="h-7 w-7 bg-lime-200 rounded-full p-1 my-auto"
+              /><p class="text-lime-200 text-2xl">
+                Site Web optimisé pour le nouveau Web.
+              </p>
+            </li>
+            <li class="flex space-x-6">
+              <Icon
+                name="ri:check-line"
+                class="h-7 w-7 bg-lime-200 rounded-full p-1 my-auto"
+              /><p class="text-white text-2xl">
+                Meilleure visibilité et notoriété de votre marque.
+              </p>
+            </li>
+            <li class="flex space-x-6">
+              <Icon
+                name="ri:check-line"
+                class="h-7 w-7 bg-lime-200 rounded-full p-1 my-auto"
+              /><p class="text-white text-2xl">
+                Plus de prospets et de clients pour vous.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block lg:hidden mt-10">
+          <div class="bg-white p-6 md:p-12 sticky top-[60px]">
+            <h2
+              class="text-3xl md:text-3xl !text-a-blue font-bold leading-relaxed"
+            >
+              Vous avez déjà un projet en tête ?
+            </h2>
+
+            <p
+              class="text-xl md:text-2xl mt-8 mb-8 md:mb-12 text-gray-500 leading-normal md:leading-relaxed"
+            >
+              Saisissez vos coordonnées et nous vous recontacterons dans les 24h
+              qui suivent.
+            </p>
+
+            <form
+              class="mx-auto w-full mt-0 md:mt-5"
+              id="contact"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="f748300c-e4d7-4821-84e2-90a3e6d01f7d"
+              />
+              <div class="relative z-0 w-full mb-5 group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_email"
+                  class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Nom Complet*</label
+                >
+              </div>
+
+              <div class="relative z-0 w-full mb-5 group mt-6">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_email"
+                  class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Email*</label
+                >
+              </div>
+
+              <div class="relative z-0 w-full mb-5 group mt-14">
+                <textarea
+                  name="message"
+                  rows="4"
+                  id="message"
+                  class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                  placeholder=" "></textarea>
+                <label
+                  for="floating_email"
+                  class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >A propos de votre projet <span class="text-sm"
+                    >(Optionnel)</span
+                  ></label
+                >
+              </div>
+
+              <!-- <div class="h-captcha" data-captcha="true"></div> -->
+
+              <div class="mt-8 flex justify-center w-full">
+                <button
+                  type="submit"
+                  class="bg-a-blue text-white font-semibold text-2xl hover:text-white py-3 px-6 rounded-full flex space-x-5 items-center w-full justify-center"
+                >
+                  <p>Envoyer</p>
+                  <Icon name="system-uicons:arrow-right" class="h-8" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 md:p-12 mt-12">
+          <h2
+            class="text-3xl md:text-3xl !text-a-blue font-bold leading-relaxed"
+          >
+            Vous avez besoin d’une analyse de vos besoins numériques ?
+          </h2>
+
+          <div class="block 2xl:flex space-y-6 mt-10">
+            <div class="relative min-w-fit mb-auto mt-6 mr-6">
+              <img class="rounded-full min-w-fit" src="../../cons.png" alt="" />
+              <span
+                class="bottom-0 left-[72px] absolute w-6 h-6 bg-green-400 border-[5px] border-white rounded-full"
+              ></span>
+            </div>
+
+            <div>
+              <p
+                class="text-xl md:text-2xl my-auto text-gray-500 leading-normal md:leading-relaxed font-semibold"
+              >
+                Voici Yazid, notre consultant numérique. Il vous aidera à
+                identifier les améliorations qui vous sont nécessaires, <b
+                  >gratuitement</b
+                >.
+              </p>
+
+              <div class="mt-10 flex justify-start w-full">
+                <a
+                  href=""
+                  title="Réserver un consultation - Arlibera"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arlibera/30min'});return false;"
+                >
+                  <button
+                    class="border-2 border-a-blue text-a-blue font-semibold py-3 px-5 hover:bg-a-blue hover:text-white hover:transition-colors rounded-full flex space-x-5 items-center justify-center w-max text-2xl"
+                  >
+                    <p class="flex">
+                      Réserver <span class="hidden xl:block ml-2">
+                        une consultation Gratuite</span
+                      >
+                    </p>
+
+                    <Icon
+                      name="system-uicons:arrow-right"
+                      class="h-8"
+                    /></button
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="2xl:flex lg:space-x-6 space-y-6 lg:space-y-0 lg:items-center lg:justify-between block bg-white p-10 my-12"
+        >
+          <div
+            class="block lg:flex lg:items-center lg:gap-8 space-y-6 lg:space-y-0"
+          >
+            <div class="">
+              <p class="text-xl font-semibold">
+                Découvrez nos différents services, projets et beaucoup plus sur
+                notre site Web.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://arlibera.ma" target="”_blank”">
+            <button
+              class="border-2 border-a-blue text-a-blue font-semibold py-3 px-5 hover:bg-a-blue hover:text-white hover:transition-colors rounded-full flex space-x-5 items-center justify-center w-max text-2xl mt-8 lg:mt-0"
+            >
+              <p>Visiter</p>
+
+              <Icon name="gg:external" class="h-8" /></button
+            ></a
+          >
+        </div>
+
+        <div class="md:hidden block mt-20 md:mt-0 space-y-2 mr-5 mb-10">
+          <a
+            href="https://www.linkedin.com/company/arlibera/"
+            target="”_blank”"
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <Icon name="mdi:linkedin" class="h-6 text-a-dark" /><p
+              class="text-a-dark text-2xl font-bold"
+            >
+              LinkedIn
+            </p>
+          </a>
+          <a
+            href="tel:+212708774105"
+            target="”_blank”"
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity md:mt-0"
+          >
+            <Icon name="fa:phone" class="h-6 p-1 text-a-dark" /><p
+              class="text-a-dark text-2xl font-bold"
+            >
+              (+212)7-087-74105
+            </p>
+          </a>
+          <a
+            href="mailto:contact@arlibera.ma"
+            target="”_blank”"
+            class="flex space-x-3 items-center opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <Icon
+              name="ic:baseline-alternate-email"
+              class="h-6 text-a-dark"
+            /><p class="text-a-dark text-2xl font-bold">contact@arlibera.ma</p>
+          </a>
+        </div>
+
+        <p class="text-md font-semibold md:pl-10 pb-10 lg:pb-0 pt-10 md:pt-0">
+          © 2024 Arlibera™. Tous Droits Réservés.
+        </p>
+      </div>
+
+      <div class="col-span-1 lg:col-span-5 hidden lg:block">
+        <div class="bg-white p-6 md:p-12 sticky top-[60px]">
+          <h2
+            class="text-3xl md:text-3xl !text-a-blue font-bold leading-relaxed"
+          >
+            Vous avez déjà un projet en tête ?
+          </h2>
+
+          <p
+            class="text-md md:text-2xl mt-8 mb-8 md:mb-12 text-gray-500 leading-normal md:leading-relaxed"
+          >
+            Saisissez vos coordonnées et nous vous recontacterons dans les 24h
+            qui suivent.
+          </p>
+
+          <form
+            class="mx-auto w-full mt-0 md:mt-5"
+            id="contact"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f748300c-e4d7-4821-84e2-90a3e6d01f7d"
+            />
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_email"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Nom Complet*</label
+              >
+            </div>
+
+            <div class="relative z-0 w-full mb-5 group mt-6">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_email"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Email*</label
+              >
+            </div>
+
+            <div class="relative z-0 w-full mb-5 group mt-14">
+              <textarea
+                name="message"
+                rows="4"
+                id="message"
+                class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+                placeholder=" "></textarea>
+              <label
+                for="floating_email"
+                class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >A propos de votre projet <span class="text-sm"
+                  >(Optionnel)</span
+                ></label
+              >
+            </div>
+
+            <!-- <div class="h-captcha" data-captcha="true"></div> -->
+
+            <div class="mt-8 flex justify-center w-full">
+              <button
+                type="submit"
+                class="bg-a-blue text-white font-semibold text-2xl hover:text-white py-3 px-6 rounded-full flex space-x-5 items-center w-full justify-center"
+              >
+                <p>Envoyer</p>
+                <Icon name="system-uicons:arrow-right" class="h-8" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

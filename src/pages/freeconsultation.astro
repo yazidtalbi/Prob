@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Hero from "../components/Hero.astro";
+import ShowReel from "../components/ShowReel.astro";
+import Agency from "../components/Agency.astro";
+import Projects from "../components/Projects.astro";
+import Cta from "../components/Cta.astro";
+import Services from "../components/Services.astro";
+import Information from "../components/Information.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Faq from "../components/Faq.astro";
+
+import Funnel from "../components/Funnel.astro";
+
+import { SEO } from "astro-seo";
+
+import { Analytics } from "@vercel/analytics/react";
+import LayoutFunnel from "../layouts/LayoutFunnel.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo-arlibera-1.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <SEO
+      title="Arlibera — Design & Code"
+      description="Arlibera est une agence Web créative basée au Maroc spécialisée dans le Design et le Développement Web des solutions digitales sur mesure."
+      openGraph={{
+        basic: {
+          title: "Arlibera — Design & Code",
+          type: "A type.",
+          image: "/og_image.webp",
+          url: "https://arlibera.ma",
+        },
+        optional: {
+          description:
+            "Arlibera est une agence web créative basée au Maroc spécialisée dans le Design et le Développement Web des solutions digitales sur mesure.",
+        },
+      }}
+      extend={{
+        // extending the default link tags
+
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "/og_image.webp",
+          },
+          { name: "twitter:title", content: "Arlibera — Design & Code" },
+          {
+            name: "twitter:description",
+            content:
+              "Arlibera est une agence web créative basée au Maroc spécialisée dans le Design et le Développement Web des solutions digitales sur mesure.",
+          },
+          {
+            name: "twitter:site",
+            content: "https://arlibera.ma",
+          },
+        ],
+      }}
+    />
+    <style></style>
+  </head>
+  <body class="overflow-x-hidden">
+    <LayoutFunnel>
+      <Funnel />
+    </LayoutFunnel>
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async></script>
+
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    ></script>
+    <script is:inline>
+      new WOW().init();
+    </script>
+
+    <Analytics client:idle />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MHRYXH48T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8MHRYXH48T");
+    </script>
+  </body>
+</html>
