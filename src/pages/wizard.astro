@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Hero from "../components/Hero.astro";
+import ShowReel from "../components/ShowReel.astro";
+import Agency from "../components/Agency.astro";
+import Projects from "../components/Projects.astro";
+import Cta from "../components/Cta.astro";
+import Services from "../components/Services.astro";
+import Information from "../components/Information.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Faq from "../components/Faq.astro";
+
+import First from "../components/wizard/first.astro";
+import Second from "../components/wizard/second.astro";
+
+import { SEO } from "astro-seo";
+
+import { Analytics } from "@vercel/analytics/react";
+import LayoutFunnel from "../layouts/LayoutFunnel.astro";
+import Third from "../components/wizard/third.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo-arlibera-1.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="overflow-x-hidden bg-a-dark">
+    <LayoutFunnel>
+      <section class="p-5 max-w-[500px] mx-auto">
+        <h1
+          class="text-white text-4xl leading-normal font-semibold text-center"
+        >
+          Bénéficier d’une Analyse de votre Marque, d'un Audit & d'une Stratégie
+          Digitale <span style="color:#FFBFF9">— gratuitement</span>.
+          <br />
+          <br />
+          <span style="color:#FDE282" class="leading-normal"
+            >Offerts pour une Durée Limitée!</span
+          >
+        </h1>
+
+        <h1
+          style="color:#FFBFF9"
+          class="text-3xl leading-normal font-semibold text-left p-5"
+        >
+          Avez-vous une marque ?
+        </h1>
+
+        <First />
+        <Second />
+        <Third />
+      </section>
+    </LayoutFunnel>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    ></script>
+    <script is:inline>
+      new WOW().init();
+    </script>
+
+    <Analytics client:idle />
+    <!-- Google tag (gtag.js) -->
+  </body>
+</html>

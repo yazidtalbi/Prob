@@ -1,0 +1,169 @@
+---
+const objectives = [
+  {
+    number: "1",
+    img: "../../wizard/12.png",
+    text: "Design et Branding de la marque",
+  },
+  {
+    number: "2",
+    img: "../../wizard/13.png",
+    text: "Performance du site Web",
+  },
+  {
+    number: "3",
+    img: "../../wizard/14.png",
+    text: "Version Mobile du site Web",
+  },
+  {
+    number: "4",
+    img: "../../wizard/15.png",
+    text: "Je ne sais vraiment pas",
+  },
+];
+---
+
+<style>
+  .PillList-item {
+    cursor: pointer;
+    /* display: inline-block; */
+    /* float: left; */
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0 12px 12px 0;
+    text-transform: capitalize;
+  }
+
+  .PillList-item input[type="checkbox"] {
+    display: none;
+  }
+  .PillList-item input[type="checkbox"]:checked + .PillList-label {
+    background-color: #ffbff9;
+    border: 2px solid #ffbff9;
+    color: #14171f;
+    /* padding-right: 16px;
+    padding-left: 16px; */
+  }
+  .PillList-label {
+    border: 2px solid #fff;
+
+    color: #fff;
+    display: block;
+    padding: 14px 28px;
+    text-decoration: none;
+  }
+  .PillList-item
+    input[type="checkbox"]:checked
+    + .PillList-label
+    .Icon--checkLight {
+    display: inline-block;
+  }
+  .PillList-item
+    input[type="checkbox"]:checked
+    + .PillList-label
+    .Icon--addLight,
+  .PillList-label .Icon--checkLight,
+  .PillList-children {
+    display: none;
+  }
+  .PillList-label .Icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 12px;
+  }
+  .Icon--smallest {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .Icon {
+    background: transparent;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: baseline;
+    position: relative;
+  }
+</style>
+
+<div class="px-4">
+  <div class="">
+    <div class="mx-auto w-full">
+      <img src="../wizard/email.png" class="mb-10" />
+    </div>
+
+    <h1 class="text-white font-bold text-3xl mb-4">Vous y êtes presque !</h1>
+    <p class="opacity-50 text-white mb-12 text-xl">
+      Où souhaitez-vous recevoir votre offre ?
+    </p>
+  </div>
+  <form
+    class="mx-auto w-full mt-0 md:mt-5"
+    id="contact"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="access_key"
+      value="f748300c-e4d7-4821-84e2-90a3e6d01f7d"
+    />
+    <div class="relative z-0 w-full mb-5 group">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+        placeholder=" "
+        required
+      />
+      <label
+        for="floating_email"
+        class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Nom & Prénom*</label
+      >
+    </div>
+
+    <div class="relative z-0 w-full mb-5 group mt-6">
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+        placeholder=" "
+        required
+      />
+      <label
+        for="floating_tel"
+        class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Téléphone</label
+      >
+    </div>
+    <p class="text-white text-xl mx-auto text-center py-4 font-bold">et/ou</p>
+    <div class="relative z-0 w-full mb-5 group">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="block py-2.5 px-0 w-full text-xl text-dark bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-a-light peer"
+        placeholder=" "
+        required
+      />
+      <label
+        for="floating_email"
+        class="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-a-light peer-focus:dark:text-a-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Email</label
+      >
+    </div>
+
+    <!-- <div class="h-captcha" data-captcha="true"></div> -->
+
+    <div class="mt-8 flex justify-center w-full">
+      <button
+        type="submit"
+        class="bg-a-blue text-white font-semibold text-2xl hover:text-white py-3 px-6 rounded-full flex space-x-5 items-center w-full justify-center"
+      >
+        <p>Envoyer</p>
+      </button>
+    </div>
+  </form>
+</div>
